@@ -1,0 +1,76 @@
+<div class="alltop-container">
+  <div class="alltitle">
+  <h2>CREATE</h2>
+  <h3>つくる</h3>
+  </div> 
+      <div class="all-category">
+      <%= link_to ("/items/category1") do %>
+      <button class="btn btn-ca">
+      <h6>WATCH ＆ LISTEN</h6>
+      <h4>見る・聴く</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category2") do %>
+      <button class="btn btn-ca">
+      <h6>CREATE</h6>
+      <h4>つくる</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category3") do %>
+      <button class="btn btn-ca">
+      <h6>MOVE</h6>
+      <h4>動く</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category4") do %>
+      <button class="btn btn-ca">
+      <h6>PLAY</h6>
+      <h4>遊ぶ</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category5") do %>
+      <button class="btn btn-ca">
+      <h6>ACQUIRE</h6>
+      <h4>身につける</h4>
+      </button>
+      <% end %>
+    </div>
+  </div>
+  <div class="route-container">
+  <%= link_to "趣味一覧へ", "/hello" %>
+  </div>
+
+<div class="items-container">
+<% @category2.each do |t| %>
+  <div class="item">
+  <div class="itemimage">
+  <%= link_to item_path(t.id) do %>
+      <%= image_tag t.image_url, size: "375x300" if t.image? %>
+        <% end %>
+        <div class="itemcategory">
+         <%= t.category %>
+        </div>
+      </div>
+      <div class="itemabout-container">
+      <h3><%= t.item_name %></h3>
+   <div class="about-container">
+        <div class="time">
+        <i class="fa-solid fa-clock"></i>
+        <%= t.required_time %>
+        m~
+        </div>
+        <div class="cost">
+        <i class="fa-solid fa-yen-sign"></i>
+        <%= t.cost %>
+        ~
+        </div>
+      </div>
+      </div>
+      <% if user_signed_in? && current_user.id == t.user_id %>  
+      <%= link_to "編集する", edit_item_path(t.id) %>
+      <%= link_to "削除する", item_path(t.id), method: :delete %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+

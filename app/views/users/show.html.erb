@@ -1,0 +1,86 @@
+<div class="alltitle" id="likeitem-anc">
+  <h2>MYPAGE</h2>
+  <h3>マイページ</h3>
+</div>
+
+<div class="myflex">
+  <div class="myinfo">
+    <div class="myicon">
+    <i class="fa-solid fa-circle-user"></i>
+    </div>
+    <div class="myname">
+    <h3><%= @user.name %></h3>
+    </div>
+  <p>メールアドレス：<%= @user.email %></p>
+    <div class="myedit">
+    <%= link_to "編集する", edit_user_registration_path %>
+    </div>
+  </div>
+
+  <div class="likeiteminfo" >
+    <div class="likeitemtitle">
+    <h2>やってみたい！したシュミ一覧</h2>
+      <%= link_to 'コメント一覧へ', user_path(anchor: 'mycomment-anc') %>
+    </div>
+  <div class="likeitems">
+  <% unless @user.liked_items.present? %>
+      <p>" やってみたい！" して お気に入りのシュミを集めましょう</p>
+    <% end %>
+  <% @user.liked_items.each do |t| %>
+    <div class="likeforitem">
+      <div class="itemimage">
+      <%= link_to item_path(t.id) do %>
+      <%= image_tag t.image_url, size: "375x300" if t.image? %>
+      <% end %>
+        <div class="itemcategory">
+        <%= t.category %>
+        </div>
+      </div>
+      <div class="itemabout-container">
+      <h3><%= t.item_name %></h3>
+      <div class="about-container">
+        <div class="time">
+        <i class="fa-solid fa-clock"></i>
+        <%= t.required_time %>
+        m~
+        </div>
+        <div class="cost">
+        <i class="fa-solid fa-yen-sign"></i>
+        <%= t.cost %>
+        ~
+        </div>
+      </div>
+      </div>
+      <% if user_signed_in? && current_user.id == t.user_id %>  
+      <%= link_to "編集する", edit_item_path(t.id) %>
+      <%= link_to "削除する", item_path(t.id), method: :delete %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+    <div id="mycomment-anc" ></div>
+    <div class="mycomment">
+     <div class="likeitemtitle">
+     <h2><i class="fa-regular fa-comment"></i>コメント一覧</h2>
+     <%= link_to 'やってみたい！したシュミ一覧へ', user_path(anchor: 'likeitem-anc') %>
+     </div>
+      <% @user.comments.each do |c| %>
+          <div class="comment-user">
+          <%= link_to item_path(c.item_id) do %>
+          <%= Item.find(c.item_id).item_name %>
+          <% end %>
+          </div>
+          <div class="comment-only">
+          <%= c.content %>
+          <% if user_signed_in? %>
+            <% if c.user_id == current_user.id %>
+            <%=link_to "コメントを削除", item_comment_path(c.item.id, c.id), method: :delete %>
+            <% end %>
+          <% end %>
+          </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib
+sharedlibdir=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib
+includedir=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

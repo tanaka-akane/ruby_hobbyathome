@@ -1,0 +1,148 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+/*アプリ全体*/
+ * {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  padding: 0;
+  margin: 0;
+  max-width: 1349px;
+}
+/*ここまで*/
+
+body {
+  /* 上部固定 */
+  padding-top: 80px;
+  /* ここまで */
+  min-height: 100vh;
+  position: relative;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FEFBE7;
+}
+
+header {
+  background-color: #F9EBC8;
+  height: 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2%;
+  /* 上部固定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* ここまで */
+}
+
+.logopc {
+  height: 60;
+  margin-top: 14px;
+}
+
+.logosp {
+  display: none;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  color: #A0BCC2;
+  text-decoration: none;
+}
+
+.header-list a:hover{
+  color: #fff;
+}
+
+header h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+footer {
+  color: #A0BCC2;
+  height: 50px;
+  background-color: #F9EBC8;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+
+/* 以下レスポンシブ */
+
+/* スマホ */
+
+@media (max-width: 1000px) {
+
+  header {
+    height: 117px;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 0 2%;
+    /* 上部固定 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* ここまで */
+  }
+
+  .logosp {
+    display: inline;
+    height: 60;
+  }
+
+  .logosp img {
+    display: inline;
+  }
+
+  .logopc {
+    display: none;
+  }
+
+}

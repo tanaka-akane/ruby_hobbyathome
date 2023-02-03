@@ -1,0 +1,46 @@
+<div class="roginbox">
+
+<div class="title">
+    <h2>新規登録</h2>
+  </div>
+<div class="information">
+    <p>”マイページ” ”コメント” “やってみたい！” 機能が使えるようになります</ｐ>
+  </div>  
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+<div class="formarea">
+ <div class="field">
+    <%= f.label :ニックネーム %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :パスワード %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :パスワード %><br /><i>(確認のためもう一度入力してください)</i><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+
+<div class="submitbtn">
+    <%= f.submit "登録する", :class=>"btn_03"  %>
+    <% end %>
+    </div>
+  <div class="actions">
+   <%= link_to "すでに登録済みの方はこちら", new_user_session_path %>
+  </div>
+
+</div>

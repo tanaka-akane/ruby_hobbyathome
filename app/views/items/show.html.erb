@@ -1,0 +1,138 @@
+<div class="alltop-container">
+  <div class="alltitle">
+  <h2>TRY IT!</h2>
+  <h3>やってみよう！</h3>
+  </div> 
+      <div class="all-category">
+      <%= link_to ("/items/category1") do %>
+      <button class="btn btn-ca">
+      <h6>WATCH ＆ LISTEN</h6>
+      <h4>見る・聴く</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category2") do %>
+      <button class="btn btn-ca">
+      <h6>CREATE</h6>
+      <h4>つくる</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category3") do %>
+      <button class="btn btn-ca">
+      <h6>MOVE</h6>
+      <h4>動く</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category4") do %>
+      <button class="btn btn-ca">
+      <h6>PLAY</h6>
+      <h4>遊ぶ</h4>
+      </button>
+      <% end %>
+      <%= link_to ("/items/category5") do %>
+      <button class="btn btn-ca">
+      <h6>ACQUIRE</h6>
+      <h4>身につける</h4>
+      </button>
+      <% end %>
+    </div>
+  </div>
+  <div class="route-container">
+  <%= link_to "趣味一覧へ", "/hello" %>
+  </div>
+
+<% if user_signed_in? && current_user.id == @item.user_id %>
+<%= link_to "編集する", edit_item_path(@item.id) %>
+<%= link_to "削除する", item_path(@item.id), method: :delete %>
+<% end %>
+
+<div class="show-content wrapper">
+  <div class-"showimage">
+  <%= image_tag @item.image_url, size: "500x400" if @item.image? %>
+  </div>
+  <div class="showitem">
+    <div class="showitem-top">
+      <div class="showitem-left">
+        <div class="showitem-name">
+        <h1><%= @item.item_name %></h1>
+        </div>
+        <div class="showitem-ca">
+        <%= @item.category %>
+        </div>
+      </div>
+      <div class="showitem-about">
+        <div class="time">
+        <i class="fa-solid fa-clock"></i>
+        <%= @item.required_time %>
+        m~
+        </div>
+        <div class="cost">
+        <i class="fa-solid fa-yen-sign"></i>
+        <%= @item.cost %>
+        ~
+        </div>
+      </div>
+    </div>
+    <div class="showitem-like">
+      <% if user_signed_in? %>
+      <% if current_user.already_liked?(@item) %>
+          <%= link_to item_like_path(@item), method: :delete do %>
+             やってみたい！<i class="fa-solid fa-thumbs-up"></i><%= @item.likes.count %>
+          <% end %>
+      <% else %>
+          <%= link_to item_likes_path(@item), method: :post do %>
+             やってみたい！<i class="fa-regular fa-thumbs-up"></i><%= @item.likes.count %>
+          <% end %>
+      <% end %>
+      <% else %>
+          <%= link_to new_user_session_path do %>
+          やってみたい！<i class="fa-regular fa-thumbs-up"></i><%= @item.likes.count %>
+          <% end %>
+      <% end %>
+    </div>
+    <div class="showitem-body">
+    <%= safe_join(@item.body.split("\n"),tag(:br))%>
+    </div>
+  </div>
+</div>
+
+  
+
+
+<div class="showreview">
+  <div class="yohaku"></div>
+  <div class="comment-wrapper">
+    <div class="comment-form">
+      <h2><i class="fa-regular fa-comment"></i>コメント</h2>
+      <h4>やってみた感想やアイデアなどを自由にコメントしよう</h4>
+        <% if user_signed_in? %>
+          <%= form_with(model: [@item, @comment], local: true) do |f| %>
+          <%= f.text_area :content, class: "commentarea" %>
+            <%= button_tag type: "submit", class: "btn btn-sub" do %>
+              コメントする
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="comment-view">
+      <% @comments.each do |c| %>
+          <div class="comment-user">
+          <i class="fa-solid fa-circle-user"></i>
+          <%= c.user.name unless c.user.blank? %>
+          </div>
+          <div class="comment-only">
+          <%= c.content %>
+          <% if user_signed_in? %>
+            <% if c.user_id == current_user.id %>
+            <%=link_to "コメントを削除", item_comment_path(c.item.id, c.id), method: :delete %>
+            <% end %>
+          <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div> 
+</div>
+
+
+</div>
+
+

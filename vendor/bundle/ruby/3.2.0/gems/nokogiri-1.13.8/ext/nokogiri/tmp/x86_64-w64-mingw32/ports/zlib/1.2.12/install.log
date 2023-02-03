@@ -1,0 +1,16 @@
+if [ "0" = "1" ]; then \
+	mkdir -p 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/bin'; \
+	cp -fp zlib1.dll 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/bin'; \
+	cp -fp libz.dll.a 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib'; \
+fi
+cp -fp zlib.h 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/include'
+cp -fp zconf.h 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/include'
+cp -fp libz.a 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib'
+sed \
+	-e 's|@prefix@|/usr/local|g' \
+	-e 's|@exec_prefix@|/usr/local|g' \
+	-e 's|@libdir@|C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib|g' \
+	-e 's|@sharedlibdir@|C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib|g' \
+	-e 's|@includedir@|C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/include|g' \
+	-e 's|@VERSION@|'`sed -n -e '/VERSION "/s/.*"\(.*\)".*/\1/p' zlib.h`'|g' \
+	zlib.pc.in > 'C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib'/pkgconfig/zlib.pc

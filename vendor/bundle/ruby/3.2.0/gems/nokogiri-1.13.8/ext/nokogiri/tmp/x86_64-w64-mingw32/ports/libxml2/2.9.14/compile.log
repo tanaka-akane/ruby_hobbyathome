@@ -1,0 +1,318 @@
+make  all-recursive
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14' に入ります
+Making all in include
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include' に入ります
+Making all in libxml
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include/libxml' に入ります
+make[3]: 'all' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include/libxml' から出ます
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include' に入ります
+make[3]: 'all-am' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include' から出ます
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/include' から出ます
+Making all in .
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14' に入ります
+  CC       xmllint.o
+  CC       SAX.lo
+SAX.c:11: warning: "IN_LIBXML" redefined
+   11 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       entities.lo
+entities.c:14: warning: "IN_LIBXML" redefined
+   14 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+entities.c: In function 'xmlEncodeEntitiesInternal':
+entities.c:599:68: warning: unused parameter 'attr' [-Wunused-parameter]
+  599 | xmlEncodeEntitiesInternal(xmlDocPtr doc, const xmlChar *input, int attr) {
+      |                                                                ~~~~^~~~
+  CC       encoding.lo
+encoding.c:23: warning: "IN_LIBXML" redefined
+   23 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       error.lo
+error.c:9: warning: "IN_LIBXML" redefined
+    9 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       parserInternals.lo
+parserInternals.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       parser.lo
+parser.c:38: warning: "IN_LIBXML" redefined
+   38 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       tree.lo
+tree.c:18: warning: "IN_LIBXML" redefined
+   18 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+tree.c: In function 'xmlDOMWrapCloneNode':
+tree.c:9541:26: warning: array subscript 'xmlNode {aka struct _xmlNode}[0]' is partly outside array bounds of 'unsigned char[96]' [-Warray-bounds]
+ 9541 |                     clone->parent = parentClone;
+      |                          ^~
+tree.c:9530:38: note: object of size 96 allocated by 'xmlMalloc'
+ 9530 |                 clone = (xmlNodePtr) xmlMalloc(sizeof(xmlAttr));
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+tree.c:9544:30: warning: array subscript 'xmlNode {aka struct _xmlNode}[0]' is partly outside array bounds of 'unsigned char[96]' [-Warray-bounds]
+ 9544 |                         clone->prev = prevClone;
+      |                              ^~
+tree.c:9530:38: note: object of size 96 allocated by 'xmlMalloc'
+ 9530 |                 clone = (xmlNodePtr) xmlMalloc(sizeof(xmlAttr));
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       hash.lo
+hash.c:20: warning: "IN_LIBXML" redefined
+   20 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       list.lo
+list.c:18: warning: "IN_LIBXML" redefined
+   18 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlIO.lo
+xmlIO.c:11: warning: "IN_LIBXML" redefined
+   11 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlmemory.lo
+xmlmemory.c:7: warning: "IN_LIBXML" redefined
+    7 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       uri.lo
+uri.c:11: warning: "IN_LIBXML" redefined
+   11 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       valid.lo
+valid.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xlink.lo
+xlink.c:11: warning: "IN_LIBXML" redefined
+   11 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       HTMLparser.lo
+HTMLparser.c:9: warning: "IN_LIBXML" redefined
+    9 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       HTMLtree.lo
+HTMLtree.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       debugXML.lo
+debugXML.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xpath.lo
+xpath.c:22: warning: "IN_LIBXML" redefined
+   22 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xpointer.lo
+xpointer.c:22: warning: "IN_LIBXML" redefined
+   22 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xinclude.lo
+xinclude.c:12: warning: "IN_LIBXML" redefined
+   12 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       nanohttp.lo
+nanohttp.c:14: warning: "IN_LIBXML" redefined
+   14 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       nanoftp.lo
+nanoftp.c:17: warning: "IN_LIBXML" redefined
+   17 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       catalog.lo
+catalog.c:15: warning: "IN_LIBXML" redefined
+   15 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       globals.lo
+globals.c:14: warning: "IN_LIBXML" redefined
+   14 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       threads.lo
+threads.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       c14n.lo
+c14n.c:12: warning: "IN_LIBXML" redefined
+   12 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlstring.lo
+xmlstring.c:16: warning: "IN_LIBXML" redefined
+   16 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       buf.lo
+buf.c:15: warning: "IN_LIBXML" redefined
+   15 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlregexp.lo
+xmlregexp.c:17: warning: "IN_LIBXML" redefined
+   17 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlschemas.lo
+xmlschemas.c:53: warning: "IN_LIBXML" redefined
+   53 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlschemastypes.lo
+xmlschemastypes.c:15: warning: "IN_LIBXML" redefined
+   15 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlunicode.lo
+xmlunicode.c:14: warning: "IN_LIBXML" redefined
+   14 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlreader.lo
+xmlreader.c:17: warning: "IN_LIBXML" redefined
+   17 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       relaxng.lo
+relaxng.c:16: warning: "IN_LIBXML" redefined
+   16 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       dict.lo
+dict.c:19: warning: "IN_LIBXML" redefined
+   19 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       SAX2.lo
+SAX2.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+SAX2.c: In function 'xmlSAX2StartElement':
+SAX2.c:1626:35: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+ 1626 |             if (ctxt->input->line < USHRT_MAX)
+      |                                   ^
+SAX2.c: In function 'xmlSAX2TextNode':
+SAX2.c:1890:35: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+ 1890 |             if (ctxt->input->line < USHRT_MAX)
+      |                                   ^
+SAX2.c: In function 'xmlSAX2StartElementNs':
+SAX2.c:2270:35: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+ 2270 |             if (ctxt->input->line < USHRT_MAX)
+      |                                   ^
+SAX2.c: In function 'xmlSAX2ProcessingInstruction':
+SAX2.c:2692:35: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+ 2692 |             if (ctxt->input->line < USHRT_MAX)
+      |                                   ^
+SAX2.c: In function 'xmlSAX2Comment':
+SAX2.c:2752:35: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+ 2752 |             if (ctxt->input->line < USHRT_MAX)
+      |                                   ^
+  CC       xmlwriter.lo
+xmlwriter.c:11: warning: "IN_LIBXML" redefined
+   11 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       legacy.lo
+legacy.c:10: warning: "IN_LIBXML" redefined
+   10 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       chvalid.lo
+chvalid.c:13: warning: "IN_LIBXML" redefined
+   13 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       pattern.lo
+pattern.c:26: warning: "IN_LIBXML" redefined
+   26 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlsave.lo
+xmlsave.c:9: warning: "IN_LIBXML" redefined
+    9 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xmlmodule.lo
+xmlmodule.c:16: warning: "IN_LIBXML" redefined
+   16 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       schematron.lo
+schematron.c:23: warning: "IN_LIBXML" redefined
+   23 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CC       xzlib.lo
+xzlib.c:9: warning: "IN_LIBXML" redefined
+    9 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CCLD     libxml2.la
+  CCLD     xmllint.exe
+  CC       xmlcatalog.o
+  CCLD     xmlcatalog.exe
+  CC       testdso.lo
+testdso.c:3: warning: "IN_LIBXML" redefined
+    3 | #define IN_LIBXML
+      | 
+<command-line>: note: this is the location of the previous definition
+  CCLD     testdso.la
+sed -e 's?\@XML_LIBDIR\@?-LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14/lib?g' \
+    -e 's?\@XML_INCLUDEDIR\@?-IC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14/include/libxml2 -IC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include?g' \
+    -e 's?\@VERSION\@?2.9.14?g' \
+    -e 's?\@XML_LIBS\@?-lxml2?g' \
+    -e 's?\@XML_PRIVATE_LIBS\@?-LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib -lz   -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib -liconv   ?g' \
+       < ./xml2Conf.sh.in > xml2Conf.tmp \
+&& mv xml2Conf.tmp xml2Conf.sh
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14' から出ます
+Making all in doc
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc' に入ります
+Making all in .
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc' に入ります
+make[3]: 'all-am' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc' から出ます
+Making all in devhelp
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc/devhelp' に入ります
+make[3]: 'all' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc/devhelp' から出ます
+Making all in examples
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc/examples' に入ります
+make[3]: 'all' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc/examples' から出ます
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/doc' から出ます
+Making all in example
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/example' に入ります
+make[2]: 'all' に対して行うべき事はありません.
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/example' から出ます
+Making all in fuzz
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/fuzz' に入ります
+make[2]: 'all' に対して行うべき事はありません.
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/fuzz' から出ます
+Making all in xstc
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/xstc' に入ります
+make[2]: 'all' に対して行うべき事はありません.
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14/xstc' から出ます
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libxml2/2.9.14/libxml2-2.9.14' から出ます

@@ -1,0 +1,13 @@
+prefix=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14
+exec_prefix=${prefix}
+libdir=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.14
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:   -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib -lz  -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib -liconv  -lws2_32 
+Cflags: -I${includedir}/libxml2 -IC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include  -DLIBXML_STATIC

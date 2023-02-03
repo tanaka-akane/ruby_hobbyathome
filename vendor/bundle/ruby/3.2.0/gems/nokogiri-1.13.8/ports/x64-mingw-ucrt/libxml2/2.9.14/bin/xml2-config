@@ -1,0 +1,110 @@
+#! /bin/sh
+
+prefix=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libxml2/2.9.14/lib
+cflags=
+libs=
+
+usage()
+{
+    cat <<EOF
+Usage: xml2-config [OPTION]
+
+Known values for OPTION are:
+
+  --prefix=DIR		change libxml prefix [default $prefix]
+  --exec-prefix=DIR	change libxml exec prefix [default $exec_prefix]
+  --libs		print library linking information
+                        add --dynamic to print only shared libraries
+  --cflags		print pre-processor and compiler flags
+  --modules		module support enabled
+  --help		display this help and exit
+  --version		output version information
+EOF
+
+    exit $1
+}
+
+if test $# -eq 0; then
+    usage 1
+fi
+
+while test $# -gt 0; do
+    case "$1" in
+    -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+    *) optarg= ;;
+    esac
+
+    case "$1" in
+    --prefix=*)
+	prefix=$optarg
+	includedir=$prefix/include
+	libdir=$prefix/lib
+	;;
+
+    --prefix)
+	echo $prefix
+	;;
+
+    --exec-prefix=*)
+      exec_prefix=$optarg
+      libdir=$exec_prefix/lib
+      ;;
+
+    --exec-prefix)
+      echo $exec_prefix
+      ;;
+
+    --version)
+	echo 2.9.14
+	exit 0
+	;;
+
+    --help)
+	usage 0
+	;;
+
+    --cflags)
+        cflags="-I${includedir}/libxml2 -IC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include  -DLIBXML_STATIC"
+       	;;
+
+    --libtool-libs)
+	if [ -r ${libdir}/libxml2.la ]
+	then
+	    echo ${libdir}/libxml2.la
+	fi
+        ;;
+
+    --modules)
+       	echo 1
+       	;;
+
+    --libs)
+        if [ "$2" = "--dynamic" ]; then
+            shift
+            libs="-lxml2"
+        else
+            libs="-lxml2 -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib -lz   -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib -liconv    "
+        fi
+
+        if [ "-L${libdir}" != "-L/usr/lib" -a "-L${libdir}" != "-L/usr/lib64" ]; then
+            libs="-L${libdir} $libs"
+        fi
+
+        libs="$libs -lws2_32"
+        ;;
+
+    *)
+	usage 1
+	;;
+    esac
+    shift
+done
+
+if test -n "$cflags$libs"; then
+    echo $cflags $libs
+fi
+
+exit 0

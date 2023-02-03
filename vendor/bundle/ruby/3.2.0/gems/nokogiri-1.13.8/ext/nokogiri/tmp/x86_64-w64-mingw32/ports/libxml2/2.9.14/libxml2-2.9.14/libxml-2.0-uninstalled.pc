@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=${pcfiledir}/include
+
+
+Name: libXML
+Version: 2.9.14
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2   -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/zlib/1.2.12/lib -lz  -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib -liconv  
+Cflags: -I${includedir} -I${includedir}/libxml2 -IC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include  -DLIBXML_STATIC

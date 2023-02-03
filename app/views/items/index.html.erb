@@ -1,0 +1,111 @@
+<div class="top">
+    <div class="home-content">
+      <h2>Find your Hobby at home</h2>
+      <p>おうち時間を充実させる、あたらしい ”シュミ” をみつけよう</p>
+    </div>
+</div>
+
+<div class="today">
+  <div class="todaytitle">
+    <h3>RECOMMEND FOR YOU</h3>
+    <h4>今日はこれをやってみる？</h4>
+    <% @random.each do |item| %>
+        <div class="randomtitle">
+        <div class="randomitem-name">
+        <p><%= item.item_name %></p>
+        </div>
+        <%= link_to  item_path(item.id) do %>
+        <button class="btn btn-top">
+        VIEW MORE
+        </button>
+        <% end %>
+        </div>
+      </div> 
+      <div class="random-item">
+      <%= image_tag item.image_url, size: "500x400" if item.image? %>
+      </div>
+    <% end %> 
+</div>
+
+<div class="title">
+<h3>WHAT DO YOU WANT?</h3>
+<h4>今日は何がしたい？</h4>
+</div>
+<div class="category">
+  <%= link_to ("/items/category1") do %>
+  <button class="btn btn-border">
+  <h5>WATCH ＆ LISTEN</h5>
+  <h3>見る・聴く</h3>
+  </button>
+  <% end %>
+  <%= link_to ("/items/category2") do %>
+  <button class="btn btn-border">
+  <h5>CREATE</h5>
+  <h3>つくる</h3>
+  </button>
+  <% end %>
+  <%= link_to ("/items/category3") do %>
+  <button class="btn btn-border">
+  <h5>MOVE</h5>
+  <h3>動く</h3>
+  </button>
+  <% end %>
+  <%= link_to ("/items/category4") do %>
+  <button class="btn btn-border">
+  <h5>PLAY</h5>
+  <h3>遊ぶ</h3>
+  </button>
+  <% end %>
+  <%= link_to ("/items/category5") do %>
+  <button class="btn btn-border">
+  <h5>ACQUIRE</h5>
+  <h3>身につける</h3>
+  </button>
+  <% end %>
+  </div>
+
+<div class="title">  
+<h3>WHAT HOBBIES ARE THERE?</h3>
+<h4>どんなシュミがあるのかな？</h4>
+</div>
+<div class="items-container">
+  <% @items.each do |t| %>
+    <div class="item">
+      <div class="itemimage">
+      <%= link_to item_path(t.id) do %>
+      <%= image_tag t.image_url, size: "375x300" if t.image? %>
+      <% end %>
+        <div class="itemcategory">
+        <%= t.category %>
+        </div>
+      </div>
+      <div class="itemabout-container">
+      <h3><%= t.item_name %></h3>
+      <div class="about-container">
+        <div class="time">
+        <i class="fa-solid fa-clock"></i>
+        <%= t.required_time %>
+        m~
+        </div>
+        <div class="cost">
+        <i class="fa-solid fa-yen-sign"></i>
+        <%= t.cost %>
+        ~
+        </div>
+      </div>
+      </div>
+      <% if user_signed_in? && current_user.id == t.user_id %>  
+      <%= link_to "編集する", edit_item_path(t.id) %>
+      <%= link_to "削除する", item_path(t.id), method: :delete %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<div class="indexlink">
+  <%= link_to ("/hello") do %>
+  <button class="btn btn-index">
+  VIEW ALL
+  </button>
+  <% end %>
+</div>

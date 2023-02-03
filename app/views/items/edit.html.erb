@@ -1,0 +1,23 @@
+<%= form_for @item do |f| %>
+  <%= f.label :item_name %>
+  <%= f.text_field :item_name, :size => 50 %>
+  <br>
+  <%= f.label :body %>
+  <%= f.text_area :body, :size => "50x5" %>
+  <br>
+  <%= f.label :required_time %>
+  <%= f.number_field :required_time, :size => 20 %>
+  <br>
+  <%= f.label :cost %>
+  <%= f.number_field :cost, :size => 20 %>
+  <br>
+  <%= f.label :category %>
+  <%= f.select :category, [["見る・聴く", "見る・聴く"], ["つくる", "つくる"], ["動く", "動く"],["遊ぶ", "遊ぶ"],["身につける", "身につける"]], include_blank: "どの投稿？" %>
+   <br>
+   </div>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <%= f.submit "編集する" %>
+<% end %>

@@ -1,0 +1,248 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.roginbox{
+  width: fit-content;
+  border: 3px solid;
+  border-color: #A0BCC2;
+  border-radius: 10px 10px 10px 10px;
+  margin: 20px auto;
+  padding-bottom: 3px;
+}
+
+.title{
+  text-align: center;
+  padding-right: 34.5px;
+}
+
+.title h2 {
+  color: #A0BCC2;
+}
+
+.deletetitle h3 {
+  color: #A0BCC2;
+  text-align: center;
+}
+
+.deletetitle {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.information {
+  text-align: center;
+  width: 550px ;
+  margin: 0 auto;
+  padding: 10px;
+  color: #A0BCC2;
+  font-weight: bold;
+}
+
+a {
+  color: #A0BCC2;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #DAE5D0;
+}
+
+.formarea{
+  text-align: center;
+  margin: 40px auto 10px auto;
+}
+
+.editformarea {
+  text-align: center;
+  margin: 40px auto 10px auto;
+  padding: 0 100px;
+}
+
+.field {
+  text-align: center;
+  margin: 20px 0 10px 0
+}
+
+.field i{
+  color: #FA5858;
+  font-size: 0.9em;
+}
+
+.submitbtn{
+  text-align: center;
+  width: 150px;
+  margin: 30px auto 10px auto;
+}
+
+
+.actions {
+  text-align: center;
+  width: 550px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background: #DAE5D0;
+  border: 1px solid #DAE5D0;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 0 25px 0 25px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-family: 'Oleo Script', cursive;
+}
+
+.btn_03:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -6px;
+}
+
+.btn_03:hover {
+  background: #fff;
+  color: #DAE5D0;
+}
+
+.btn_03:hover:before {
+  border-top: 2px solid #DAE5D0;
+  border-right: 2px solid #DAE5D0;
+}
+
+/* マイページ */
+
+.myflex {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 60px 60px 60px;
+}
+
+.myinfo {
+  border: 3px solid;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #A0BCC2;
+  color: #A0BCC2;
+  font-weight: bold;
+  height: fit-content;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.myinfo p {
+  overflow-wrap: break-word;
+}
+
+.myicon {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  color: #F9EBC8;
+}
+
+.myname {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #A0BCC2;
+  padding: 10px 0;
+  overflow-wrap: break-word;
+}
+
+.myedit {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.myedit a {
+  color: #A0BCC2;
+  font-weight: bold;
+}
+
+.myedit a:hover {
+  color: #DAE5D0
+}
+
+.likeiteminfo {
+  margin: 0 50px 20px 120px;
+  width: 900px;
+}
+
+.likeitemtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeitemtitle a {
+  padding-top: 10px;
+  height: fit-content;
+}
+
+.likeiteminfo h2 {
+  color: #A0BCC2;
+  margin: 0 0 15px 0;
+  height: fit-content;
+}
+
+.likeitems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.likeitems p {
+  color: #A0BCC2;
+  font-weight: bold;
+  padding-left: 10px
+}
+
+.likeforitem {
+  color: #A0BCC2;
+  margin-bottom: 20px;
+}
+
+.comment-user {
+  text-align: start;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mycomment {
+  margin-left: 10px;
+}
+
+.mycomment h2 {
+  text-align: start;
+  margin-left: 0;
+}
+
+#mycomment-anc {
+  height: 90px;
+}

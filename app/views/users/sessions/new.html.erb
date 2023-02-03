@@ -1,0 +1,38 @@
+<div class="roginbox">
+
+<div class="title">
+  <h2>ログイン</h2>
+</div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="formarea">
+  <div class="field">
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :パスワード %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :ログイン情報を保存する %>
+    </div>
+  <% end %>
+
+<div class="submitbtn">
+    <%= f.submit "ログイン", :class=>"btn_03" %>
+    <% end %>
+</div>
+
+<div class="actions">
+<%= link_to "新規登録", new_user_registration_path %>
+<%= link_to "パスワードを忘れた方はこちら", new_user_password_path %>
+</div>
+
+
+</div>

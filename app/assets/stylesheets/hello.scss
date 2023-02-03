@@ -1,0 +1,117 @@
+// Place all the styles related to the hello controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+.alltop-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alltitle {
+  width: 300px;
+  padding: 30px 0 20px 60px;
+}
+
+.alltitle h2 {
+  font-family: 'Oleo Script', cursive;
+  color: #A0BCC2;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.alltitle h3 {
+  color: #A0BCC2;
+  text-align: left;
+}
+
+
+.all-category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-ca {
+  border: 2px solid #DAE5D0;
+  background: #DAE5D0;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  width: 150px;
+  height: 60px;
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-ca:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+.btn h6 {
+  font-family: 'Oleo Script', cursive;
+}
+
+.search {
+  border: 3px solid #A0BCC2;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 10em;
+  font-size: 1em;
+  color: #A0BCC2;
+}
+
+.btn-search {
+  border: 2px solid #DAE5D0;
+  background: #DAE5D0;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  width: 5em;
+  height: 1.5em;
+  position: relative;
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Oleo Script', cursive;
+  padding-bottom: 10px;
+}
+
+.btn-top:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+.searchbox {
+  text-align: right;
+  margin: 0 30px 20px 0;
+}
+
+.paginate-top{
+  margin-top: 20px;
+  margin-right: 61px;
+  color: #A0BCC2;
+}
+
+.paginate-fot {
+  text-align: center;
+  margin: 0 auto;
+  color: #A0BCC2;
+}
+
+.paginate-fot a {
+  color: #A0BCC2;
+  text-decoration: none;
+}
+
+.paginate-fot a:hover {
+  color: #DAE5D0;
+  text-decoration: none;
+}

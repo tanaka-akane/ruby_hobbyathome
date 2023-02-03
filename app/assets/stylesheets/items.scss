@@ -1,0 +1,495 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+/* トップ画像 */
+
+.top {
+background-image: image-url('toppage_new.jpg');
+height: 538px;
+background-size: contain;
+}
+
+.home-content {
+  text-align: center;
+  padding: 210px;
+}
+
+.home-content h2 {
+  font-family: 'Oleo Script', cursive;
+  color: #FEFBE7;
+  font-size: 50px;
+}
+
+.home-content p {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  color: #FEFBE7;
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+/* 各見出し */
+
+.title {
+  padding: 40px 0 20px 30px;
+}
+
+.title h3 {
+  font-family: 'Oleo Script', cursive;
+  color: #A0BCC2;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.title h4 {
+  color: #A0BCC2;
+  text-align: left;
+}
+
+
+/* ランダムおすすめ */
+
+.today {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 30%;
+}
+
+.today a {
+  text-decoration: none;
+}
+
+.random-item {
+  padding-left: 20px;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.todaytitle h3 {
+  font-family: 'Oleo Script', cursive;
+  color: #A0BCC2;
+  font-size: 2rem;
+  width: 340px;
+}
+
+.todaytitle h4 {
+  color: #A0BCC2;
+  width: 300px;
+}
+
+.todaytitle {
+  padding: 50px;
+  margin: 60px 50px 45px 0;
+}
+
+.randomtitle {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.randomitem-name {
+font-size: 1.5rem;
+color: #A0BCC2;
+margin-bottom: 30px;
+}
+
+.btn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 50px;
+  position: relative;
+  background: #DAE5D0;
+  border: 2px solid #DAE5D0;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+  line-height: 1.3;
+}
+
+
+.btn-top:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+.btn-top::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+
+/* カテゴリー */
+
+.category {
+ display: flex;
+ justify-content: space-around;
+}
+
+.btn-border {
+  border: 2px solid #DAE5D0;
+  background: #DAE5D0;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  width: 230px;
+  height: 100px;
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-border:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+.btn h5 {
+  font-family: 'Oleo Script', cursive;
+}
+
+/* 一覧 */
+.items-container{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 30px 10px;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  padding: 10px;
+  color: #A0BCC2;
+}
+
+.itemimage {
+  position: relative;
+}
+
+.itemcategory {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  padding: 5px 10px 5px 10px;
+  background-color: #A0BCC2;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  font-weight: bold;
+}
+
+.about-container {
+  display: flex;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.time {
+  margin: 0 10px;
+}
+
+.itemabout-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemimage a {
+  background: #fff;
+}
+
+.itemimage a:hover{
+      opacity: 0.5;
+      transition: 0.3s;
+}
+
+.indexlink {
+  display: flex;
+  justify-content: right;
+  margin: 10px 78px 50px 0;
+}
+
+.indexlink a {
+  text-decoration: none;
+}
+
+.btn-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background: #DAE5D0;
+  border: 2px solid #DAE5D0;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+  line-height: 1.3;
+}
+
+
+.btn-index:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+.btn-index::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+/* カテゴリーページ */
+
+.alltop-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.route-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.route-container a {
+  font-weight: bold;
+  margin: 10px;
+  color: #A0BCC2;
+}
+
+.route-container a:hover {
+  color: #DAE5D0;
+}
+
+/* 詳細ページ */
+
+.show-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 100px 20px 100px;
+}
+
+.showimage {
+  width: 560px;
+}
+
+.showitem {
+  width: 840px;
+  margin-left: 90px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-color: #DAE5D0;
+}
+
+.showitem-top {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.showitem-left {
+  display: flex;
+}
+
+.showitem-name {
+  width: fit-content;
+  margin: 10px 10px 20px 0;
+  color: #A0BCC2;
+}
+
+.showitem-ca {
+  display: flex;
+  padding: 5px 10px 5px 10px;
+  background-color: #A0BCC2;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  font-weight: bold;
+  width: fit-content;
+  height: 1em;
+  margin: 23px 20px 20px 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.showitem-about{
+  display: flex;
+  justify-content: flex-end;
+  color: #A0BCC2;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 23px 20px 20px 20px;
+}
+
+.showitem-like {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  color: #A0BCC2;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.showitem-like a {
+  text-decoration: none;
+  color: #A0BCC2;
+}
+
+.showitem-like i {
+  font-size: 2em;
+}
+
+.showitem-body {
+  color: #A0BCC2;
+  margin: 50px 20px 0 0;
+  font-weight: bold;
+}
+
+
+.showreview {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100px 50px 100px;
+  padding-left: 80px;
+}
+
+.yohaku {
+  width: 560px;
+}
+
+.comment-wrapper {
+  width: 742px;
+  margin-left: 90px;
+}
+
+.comment-form h2 {
+  color: #A0BCC2;
+}
+
+.comment-form h4 {
+  color: #A0BCC2;
+  margin-bottom: 20px;
+}
+
+.commentarea {
+  width: 25em;
+  color: #A0BCC2;
+  border: 2px solid;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #A0BCC2;
+  font-size: 1em;
+  height: 1.7em;
+}
+
+.btn-sub {
+  border: 2px solid #DAE5D0;
+  background: #DAE5D0;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.btn-sub:hover {
+  color: #DAE5D0;
+  background: #fff;
+}
+
+/* 吹き出し本体 */
+.comment-only {
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #A0BCC2;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 15px 0 20px 0; 
+  color: #A0BCC2;
+  font-weight: bold;
+}
+
+/* beforeで枠線の三角を表現 */
+.comment-only::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 20px;
+  top: -15px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #A0BCC2;
+  border-left: 15px solid transparent;
+}
+
+/* beforeで本体の三角を表現 */
+.comment-only::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 20px;
+  top: -12px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+  border-left: 15px solid transparent;
+}
+
+.comment-only a {
+  color: #A0BCC2;
+}
+
+.comment-only a:hover {
+  color: #DAE5D0;
+}
+
+.comment-user {
+  color: #A0BCC2;
+  font-weight: bold;
+}
+
+/*以下アニメーション*/
+
+/*ここまで*/
+
+
+/* 以下レスポンシブ */
+
+/* 画面サイズが700px以下の場合,スマホ */
+
+@media (max-width: 700px) {
+
+  
+}

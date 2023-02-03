@@ -1,0 +1,135 @@
+cd libcharset && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' libdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/libcharset' に入ります
+cd lib && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' libdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib'
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/libcharset/lib' に入ります
+/bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib ; \
+/bin/sh ../libtool --mode=install /usr/bin/install -c libcharset.la C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libcharset.la
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib
+libtool: install: /usr/bin/install -c .libs/libcharset.lai C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libcharset.la
+libtool: install: /usr/bin/install -c .libs/libcharset.a C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libcharset.a
+libtool: install: chmod 644 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libcharset.a
+libtool: install: ranlib C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libcharset.a
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/libcharset/lib' から出ます
+/bin/sh ./build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include
+/usr/bin/install -c -m 644 include/libcharset.h C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include/libcharset.h
+/usr/bin/install -c -m 644 include/localcharset.h.inst C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include/localcharset.h
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/libcharset' から出ます
+cd lib && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' libdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/lib' に入ります
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib ] ; then /bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib ; fi
+/bin/sh ../libtool --mode=install /usr/bin/install -c libiconv.la C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.la
+libtool: install: /usr/bin/install -c .libs/libiconv.lai C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.la
+libtool: install: /usr/bin/install -c .libs/libiconv.a C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.a
+libtool: install: chmod 644 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.a
+libtool: install: ranlib C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.a
+case "mingw32" in \
+  aix*) (cd C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib && \
+         objects=`ar t libiconv.a`" "`ar t /lib/libiconv.a` && \
+         ar x libiconv.a && ar x /lib/libiconv.a && \
+         ar q libiconv.new.a $objects && \
+         rm -f $objects && \
+         mv -f libiconv.new.a libiconv.a) ;; \
+esac
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/lib' から出ます
+cd srclib && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' libdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' に入ります
+make  install-am
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' に入ります
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' に入ります
+make[3]: 'install-exec-am' に対して行うべき事はありません.
+make[3]: 'install-data-am' に対して行うべき事はありません.
+make[3]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' から出ます
+make[2]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' から出ます
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/srclib' から出ます
+cd src && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' libdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/src' に入ります
+test `ls -ld . | sed -e 's/^d\(.........\).*/\1/'` = rwxrwxrwx || chmod 777 .
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin ] ; then /bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin ; fi
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin
+case "mingw32" in \
+  hpux*) gcc  -O2 -U_FORTIFY_SOURCE -g -fPIC `if test -n ''; then  C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin; fi` iconv.o ../srclib/libicrt.a -LC:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib -liconv -lintl iconv.res `if test -n ''; then echo " -Wl,+b -Wl,C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib"; fi` -o iconv.exe;; \
+  *) /bin/sh ../libtool --mode=link gcc  -O2 -U_FORTIFY_SOURCE -g -fPIC `if test -n ''; then  C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin; fi` iconv.o ../srclib/libicrt.a C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.la -lintl iconv.res -o iconv.exe;; \
+esac
+libtool: link: gcc -O2 -U_FORTIFY_SOURCE -g -fPIC iconv.o iconv.res -o iconv.exe  ../srclib/libicrt.a C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/lib/libiconv.a -lintl
+/bin/sh ../libtool --mode=install /usr/bin/install -c iconv.exe C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin/iconv.exe
+libtool: install: /usr/bin/install -c iconv.exe C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/bin/iconv.exe
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/src' から出ます
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include ] ; then /bin/sh ./build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include ; fi
+/usr/bin/install -c -m 644 include/iconv.h.inst C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/include/iconv.h
+cd po && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' datarootdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share' datadir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/po' に入ります
+installing af.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/af/LC_MESSAGES/libiconv.mo
+installing bg.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/bg/LC_MESSAGES/libiconv.mo
+installing ca.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/ca/LC_MESSAGES/libiconv.mo
+installing cs.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/cs/LC_MESSAGES/libiconv.mo
+installing da.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/da/LC_MESSAGES/libiconv.mo
+installing de.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/de/LC_MESSAGES/libiconv.mo
+installing el.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/el/LC_MESSAGES/libiconv.mo
+installing eo.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/eo/LC_MESSAGES/libiconv.mo
+installing es.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/es/LC_MESSAGES/libiconv.mo
+installing et.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/et/LC_MESSAGES/libiconv.mo
+installing fi.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/fi/LC_MESSAGES/libiconv.mo
+installing fr.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/fr/LC_MESSAGES/libiconv.mo
+installing ga.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/ga/LC_MESSAGES/libiconv.mo
+installing gl.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/gl/LC_MESSAGES/libiconv.mo
+installing hr.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/hr/LC_MESSAGES/libiconv.mo
+installing hu.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/hu/LC_MESSAGES/libiconv.mo
+installing id.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/id/LC_MESSAGES/libiconv.mo
+installing it.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/it/LC_MESSAGES/libiconv.mo
+installing ja.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/ja/LC_MESSAGES/libiconv.mo
+installing lt.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/lt/LC_MESSAGES/libiconv.mo
+installing nl.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/nl/LC_MESSAGES/libiconv.mo
+installing pl.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/pl/LC_MESSAGES/libiconv.mo
+installing pt_BR.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/pt_BR/LC_MESSAGES/libiconv.mo
+installing rm.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/rm/LC_MESSAGES/libiconv.mo
+installing ro.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/ro/LC_MESSAGES/libiconv.mo
+installing ru.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/ru/LC_MESSAGES/libiconv.mo
+installing sk.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/sk/LC_MESSAGES/libiconv.mo
+installing sl.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/sl/LC_MESSAGES/libiconv.mo
+installing sq.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/sq/LC_MESSAGES/libiconv.mo
+installing sr.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/sr/LC_MESSAGES/libiconv.mo
+installing sv.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/sv/LC_MESSAGES/libiconv.mo
+installing tr.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/tr/LC_MESSAGES/libiconv.mo
+installing uk.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/uk/LC_MESSAGES/libiconv.mo
+installing vi.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/vi/LC_MESSAGES/libiconv.mo
+installing wa.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/wa/LC_MESSAGES/libiconv.mo
+installing zh_CN.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/zh_CN/LC_MESSAGES/libiconv.mo
+installing zh_TW.gmo as C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/locale/zh_TW/LC_MESSAGES/libiconv.mo
+if test "libiconv" = "gettext-tools"; then \
+  /usr/bin/mkdir -p C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/po' から出ます
+cd man && make install prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' exec_prefix='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16' datarootdir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share' datadir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share' mandir='C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man'
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/man' に入ります
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1 ] ; then /bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1 ; fi
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1
+builddir="`pwd`"; cd . && for f in *.1 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1/$f ; /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1/$f) ; done
+/usr/bin/install -c -m 644 ./iconv.1 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man1/iconv.1
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3 ] ; then /bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3 ; fi
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3
+builddir="`pwd`"; cd . && for f in *.3 ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/$f ; /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/$f) ; done
+/usr/bin/install -c -m 644 ./iconv.3 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/iconv.3
+/usr/bin/install -c -m 644 ./iconv_close.3 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/iconv_close.3
+/usr/bin/install -c -m 644 ./iconv_open.3 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/iconv_open.3
+/usr/bin/install -c -m 644 ./iconv_open_into.3 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/iconv_open_into.3
+/usr/bin/install -c -m 644 ./iconvctl.3 C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/man/man3/iconvctl.3
+if [ ! -d C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc/ ] ; then /bin/sh ../build-aux/mkinstalldirs C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc/ ; fi
+mkdir -p -- C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc/
+builddir="`pwd`"; cd . && for f in *.html ; do (cd "$builddir"; echo /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//$f ; /usr/bin/install -c -m 644 ./$f C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//$f) ; done
+/usr/bin/install -c -m 644 ./iconv.1.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconv.1.html
+/usr/bin/install -c -m 644 ./iconv.3.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconv.3.html
+/usr/bin/install -c -m 644 ./iconv_close.3.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconv_close.3.html
+/usr/bin/install -c -m 644 ./iconv_open.3.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconv_open.3.html
+/usr/bin/install -c -m 644 ./iconv_open_into.3.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconv_open_into.3.html
+/usr/bin/install -c -m 644 ./iconvctl.3.html C:/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ports/x64-mingw-ucrt/libiconv/1.16/share/doc//iconvctl.3.html
+make[1]: ディレクトリ '/c/Users/akanetanaka/Desktop/mainitem/hobbykansei/vendor/bundle/ruby/3.2.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-w64-mingw32/ports/libiconv/1.16/libiconv-1.16/man' から出ます
